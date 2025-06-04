@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.khassaaz">
 
     <application
         android:allowBackup="true"
@@ -12,17 +13,39 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KhasSaaz"
         tools:targetApi="31">
+
+        <!-- Splash screen as the launcher activity -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.KhasSaaz">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Main activity -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.KhasSaaz">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:theme="@style/Theme.KhasSaaz" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <!-- Product detail activity -->
+        <activity
+            android:name=".ProductDetailActivity"
+            android:exported="true"
+            android:label="Product Details"
+            android:theme="@style/Theme.KhasSaaz" />
+
+        <!-- Cart activity (make sure it's styled and labeled) -->
+        <activity
+            android:name=".CartActivity"
+            android:exported="true"
+            android:label="Cart"
+            android:theme="@style/Theme.KhasSaaz" />
+
     </application>
 
 </manifest>

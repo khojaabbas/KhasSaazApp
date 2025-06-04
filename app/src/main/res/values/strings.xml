@@ -1,3 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- App Name -->
     <string name="app_name">KhasSaaz</string>
+    <string name="app_name_display">Welcome to KhasSaaz</string>
+    <string name="app_description_display">Premium clothing Brand</string>
+
+    <!-- Categories -->
+    <string name="men">Men</string>
+    <string name="women">Women</string>
+    <string name="kids">Kids</string>
+
+    <!-- Cart -->
+    <string name="go_to_cart">Go to Cart</string>
+    <string name="my_cart">My Cart</string>
+    <string name="cart_is_empty">Your cart is currently empty.</string>
+    <string name="total_price">Total: ₹0.00</string>
+    <string name="checkout">Checkout</string>
+    <string name="added_to_cart">Item added to cart</string>
+    <string name="item_quantity">Qty: %1$d</string>
+
+    <!-- Product Detail -->
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="category">Category: %1$s</string>
+    <string name="price">Price: ₹%1$.2f</string>
+
+    <string name="category_label">Category: %1$s</string>
+    <string name="price_label">Rs. %1$.2f</string>
+    <string name="product_image">Product Image</string>
+
+
+
+
 </resources>
